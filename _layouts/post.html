@@ -55,15 +55,15 @@ script_includes:
       <div class="d-flex justify-content-between">
         <!-- author(s) -->
         <span>
-          {% if page.author %}
+          <!-- {% if page.author %}
             {% assign authors = page.author %}
           {% elsif page.authors %}
             {% assign authors = page.authors %}
           {% endif %}
 
-          {{ site.data.locales[lang].post.written_by }}
+          {{ site.data.locales[lang].post.written_by }} -->
 
-          <em>
+          <!-- <em>
             {% if authors %}
               {% for author in authors %}
                 {% if site.data.authors[author].url -%}
@@ -76,7 +76,7 @@ script_includes:
             {% else %}
               <a href="{{ site.social.links[0] }}">{{ site.social.name }}</a>
             {% endif %}
-          </em>
+          </em> -->
         </span>
 
         <div>
@@ -158,7 +158,7 @@ script_includes:
         d-flex justify-content-between align-items-center mt-5 pb-2
       "
     >
-      <div class="license-wrapper">
+      <!-- <div class="license-wrapper">
         {% if site.data.locales[lang].copyright.license.template %}
           {% capture _replacement %}
         <a href="{{ site.data.locales[lang].copyright.license.link }}">
@@ -168,7 +168,7 @@ script_includes:
 
           {{ site.data.locales[lang].copyright.license.template | replace: ':LICENSE_NAME', _replacement }}
         {% endif %}
-      </div>
+      </div> -->
 
       {% include post-sharing.html lang=lang %}
     </div>
