@@ -45,10 +45,10 @@ jobs:
       - name: Build Assets
         run: npm run build
 
-      - name: Build Site
-        run: bundle exec jekyll build
+      - name: Build site
+        run: bundle exec jekyll b -d "_site$"
         env:
-          JEKYLL_ENV: production
+          JEKYLL_ENV: "production"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
