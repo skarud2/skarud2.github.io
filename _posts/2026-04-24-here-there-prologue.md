@@ -1,7 +1,7 @@
 ---
 title: "[prologue] 졸작 리팩토링: 요기조기"
 description: 졸업 후 다시 만들어보는 졸업작품
-author: 
+author: nk
 date: 2026-04-23 12:00:00 +0900
 categories: [Project, 요기조기]
 tags: [요기조기]
